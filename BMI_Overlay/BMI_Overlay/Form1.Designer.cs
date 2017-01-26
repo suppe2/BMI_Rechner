@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(254, 423);
+            this.ClientSize = new System.Drawing.Size(254, 615);
             this.Controls.Add(this.dgv_tabelle);
             this.Controls.Add(this.btn_tabelle);
             this.Controls.Add(this.label4);
