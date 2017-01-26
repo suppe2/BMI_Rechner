@@ -81,6 +81,8 @@
             this.tbx_groeße.Size = new System.Drawing.Size(147, 20);
             this.tbx_groeße.TabIndex = 3;
             this.tbx_groeße.Text = "Meter";
+            this.tbx_groeße.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbx_groeße_MouseClick);
+            this.tbx_groeße.TextChanged += new System.EventHandler(this.tbx_groeße_TextChanged);
             // 
             // tbx_gewicht
             // 
@@ -90,6 +92,8 @@
             this.tbx_gewicht.Size = new System.Drawing.Size(147, 20);
             this.tbx_gewicht.TabIndex = 4;
             this.tbx_gewicht.Text = "Kilogramm";
+            this.tbx_gewicht.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbx_gewicht_MouseClick);
+            this.tbx_gewicht.TextChanged += new System.EventHandler(this.tbx_gewicht_TextChanged);
             // 
             // label1
             // 
