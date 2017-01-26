@@ -62,25 +62,14 @@ namespace BMI_Overlay
             string bmi = BMI.CalculateBMI(Convert.ToDouble(tbx_groeße.Text), Convert.ToDouble(tbx_gewicht.Text));
             tbx_bmi.Text = bmi;
         }
-
-        private void tbx_groeße_TextChanged(object sender, EventArgs e)
-        {
-            tbx_groeße.Text += " m";
-        }
-
-        private void tbx_gewicht_TextChanged(object sender, EventArgs e)
-        {
-            tbx_gewicht.Text += " kg";
-        }
-
         private void tbx_gewicht_MouseClick(object sender, MouseEventArgs e)
         {
-            tbx_gewicht.Clear();
+            tbx_gewicht.Text = "";
         }
 
         private void tbx_groeße_MouseClick(object sender, MouseEventArgs e)
         {
-            tbx_groeße.Clear();
+            tbx_groeße.Text = "";
         }
     }
 }
