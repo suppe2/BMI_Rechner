@@ -14,11 +14,11 @@ namespace BMI_Rechner
         //    m_groesse = groesse;
         //    m_gewicht = gewicht;
         //}
-        public static double CalculateBMI(double groesse, double gewicht)
+        public static string CalculateBMI(double groesse, double gewicht)
         {
             double bmi;
             bmi = gewicht / (Math.Pow(groesse, 2));
-            return bmi;
+            return bmi.ToString();
         }
     }
 }

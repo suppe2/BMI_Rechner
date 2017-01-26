@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BMI_Rechner;
 using System.Windows.Forms;
 
 namespace BMI_Overlay
@@ -58,13 +59,8 @@ namespace BMI_Overlay
 
         private void btn_bmi_Click(object sender, EventArgs e)
         {
-            double gewicht = Convert.ToDouble(tbx_gewicht.Text);
-            int groeße = Convert.ToInt32(tbx_groeße.Text);
-
-            double bmi = gewicht / Math.Pow(groeße, 2);
-
-            tbx_bmi.Text = Convert.ToString(bmi);
-
+            string bmi = BMI.CalculateBMI(Convert.ToDouble(tbx_groeße.Text), Convert.ToDouble(tbx_gewicht.Text));
+            tbx_bmi.Text = bmi;
         }
     }
 }
